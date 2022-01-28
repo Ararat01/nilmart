@@ -1,0 +1,95 @@
+.header {
+    padding: 15px 0 20px 0;
+    &__flexbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__elem {
+        display: flex;
+        align-items: center;
+    }
+    &__search {
+        position: relative;
+        width: 100%;
+        max-width: 377px;
+        &__input {
+            width: 100%;
+            padding: 10px 25px 10px 5px;
+            border-bottom: 1px solid #A7A7A7;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            color: #222222;
+        }
+        &__button {
+            position: absolute;
+            top: 10px;
+            right: 3px;
+            background-color: transparent;
+        }
+    }
+}
+
+.button {
+    border-radius: 2px;
+    position: relative;
+    padding: 20px 17px 15px 14px;
+    .basket_items_count {
+        position: absolute;
+        top: 5px;
+        right: 9px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    &-null {
+        background: linear-gradient(180deg, #B4B4B4 -61.02%, #9B9B9B 167.8%);
+        &:hover {
+            background: linear-gradient(180deg, #C4C4C4 -61.02%, #A9A9A9 167.8%);
+        }
+        &:active {
+            background: linear-gradient(180deg, #A5A5A5 -61.02%, #909090 167.8%);
+        }
+    }
+    &-active {
+        background: linear-gradient(180deg, #FDB806 -61.02%, #FD8006 167.8%);
+        &:hover {
+            background: linear-gradient(180deg, #FFBB3B 0%, #FFA800 100%);
+        }
+        &:active {
+            background: linear-gradient(180deg, #FDB806 0%, #FD8006 100%);
+        }
+    }
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    &__text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 8px;
+        &__name {
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 50px;
+            color: #8BB655;
+        }
+        &__slogan {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 13px;
+            color: #858585;
+        }
+    }
+}
