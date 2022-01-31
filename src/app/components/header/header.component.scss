@@ -1,18 +1,19 @@
 .header {
-    padding: 15px 0 20px 0;
     &__flexbox {
+        padding: 15px 0 20px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__elem {
         display: flex;
-        align-items: center;
+        align-items: flex-end
     }
     &__search {
         position: relative;
         width: 100%;
         max-width: 377px;
+        margin-right: 35px;
         &__input {
             width: 100%;
             padding: 10px 25px 10px 5px;
@@ -29,6 +30,28 @@
             top: 10px;
             right: 3px;
             background-color: transparent;
+        }
+    }
+    &__catergories {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        &__btn {
+            display: flex;
+            align-items: center;
+            height: 35px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #222222;
+            cursor: pointer;
+            background-color: transparent;
+            img {
+                height: 100%;
+                margin-right: 10px;
+            }
         }
     }
 }
@@ -90,6 +113,56 @@
             font-size: 13px;
             line-height: 13px;
             color: #858585;
+        }
+    }
+}
+
+.contact {
+    width: 100%;
+    background-color: #F6F6F6;
+    padding: 14px 0px 12px 0;
+    &__flexbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        &__number {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+            color: #222222;
+            font-weight: 300;
+            a {
+                color: #222222;
+                font-size: 15px;
+                line-height: 18px;
+                font-weight: 400;
+            }
+            &:not(:last-child) {
+                margin-right: 29px;
+            }
+        }
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        &__link {
+            color: #222222;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: right;
+            text-decoration-line: underline;
+            &:not(:last-child) {
+                margin-right: 29px;
+            }
         }
     }
 }

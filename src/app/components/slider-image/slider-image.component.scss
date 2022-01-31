@@ -1,0 +1,11 @@
+.slider {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+
+.main-slider {
+    width: 100%;
+    overflow: hidden;
+}
